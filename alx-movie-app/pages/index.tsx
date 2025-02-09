@@ -1,7 +1,7 @@
-import Button from '@/components/commons/Button'
-import { useRouter } from 'next/router'
+import Button from "@/components/commons/Button";
+import { useRouter } from "next/router";
 const Home: React.FC = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <div className="bg-[#171D22] text-white">
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       >
         <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-8">
-            Discover Your Next Favorite{' '}
+            Discover Your Next Favorite{" "}
             <span className="text-[#E2D609]">Movie</span>
           </h1>
           <p className="text-lg md:text-2xl mb-8 max-w-2xl">
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           </p>
           <Button
             title="Browse Movies"
-            action={() => router.push('/movies', undefined, { shallow: false })}
+            action={() => router.push("/movies", undefined, { shallow: false })}
           />
         </div>
       </section>
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         <Button title="Get Started" />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
